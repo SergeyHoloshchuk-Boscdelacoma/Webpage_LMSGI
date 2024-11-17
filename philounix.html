@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="stylesheet" href="css/estil.css">
+		<title>WhatIsLinux</title>
+	</head>
+	
+	<header>
+		<nav id=navmenu>
+				<ul class=navwords>
+					<li><a href="./index.html" >WhatIsLinux</a></li>
+					<li><a href="./manual.html" class=navwords>Man</a></li>
+					<li><a href="./philounix.html" id=current-page>Unix Shell</a></li>
+					<li><a href="./docs.html" class=navwords>Documentation</a></li>
+					<li class=navwords id=extra>Extra
+						<ul class=submenu>
+							<li><a href="./form.html" class=navwords>Contact</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+	</header>
+	
+	
+	<body>
+		
+
+		<h1>Unix Shell</h1>
+		<h2>and the Libre software philosophy</h2>
+		
+		 <img src="css/imatges/unix.gif" alt="unix-shell-gif" class="center"> </img>
+		
+		<p>You need to understand your computer, in this page we will explain:</p> 
+		
+		<ol>
+			<li>the layers of an operative system</li>
+			<li>the linux file hierarchy</li>
+			<li>what is libre software</li>
+		</ol>
+		
+		<img src="css/imatges/layers.png" alt="unix-layers" class="center"> </img>
+
+		<p>Our <strong>operative system</strong> (OS) is a complex software framework that serves as an intermediary between the computer hardware
+		and the user interface (all the programs that we use daily) structured in layers to manage resources efficiently.</p> 
+		<p>At the base, the <strong>hardware</strong> layer consists of the physical components of a computer, such as the CPU, memory, and 
+		storage devices.</p> 
+		<p>Above this, the <strong>kernel</strong> layer operates as the core of the OS, responsible for managing system resources, handling 
+		communication between hardware and software, and providing essential services like process management and memory 
+		allocation. </p>
+		<p>The next layer is the <strong>shell</strong>, which serves as a command-line interface, allowing users to interact with 
+		the kernel by entering commands. This layer can also include graphical user interfaces (GUIs) that provide a more 
+		intuitive way for users to navigate the system. </p>
+		<p>Finally, at the top layer, <strong>user applications</strong> leverage the OS's functionalities to perform 
+		specific tasks, from productivity software to web browsers. Together, these layers work harmoniously to enable 
+		users to harness the full potential of their computer systems while maintaining efficient resource management and 
+		security.</p>
+		
+		<h2>Linux File Hierarchy</h2>
+		<img src="css/imatges/filesystem.png" alt="linux_hierarchy" class="center"> </img>
+		
+		<p>The <strong>Linux filesystem hierarchy</strong> is a structured layout that organizes files and directories 
+		in a tree-like format, beginning with the root directory (/). 
+		Each directory serves a distinct purpose, contributing to the system's overall functionality.</p>
+		
+		<p>You can interact, configure, change, create, destroy... every directory that the system has, you can create
+		daemons(program that runs as a background process), shortcuts for commands, compile user interfaces from scratch...</p>
+		<p>Anything that you want to do you can do it, even break the entire system by removing the kernel...</p>
+		<p>...or maybe replace it with another one.</p>
+		
+		<p> Here is a summary of the directories in the standard file hierarchy that every GNU/Linux distro comes with:</p>
+		<p id="parentesis"> (you can visualise it better by looking at the image above)</p>
+		
+		<p>The <strong>/bin</strong> directory contains essential command binaries that are required for basic system 
+		operations. </p>
+		
+		<p>The <strong>/sbin</strong> directory houses system binaries used primarily by the system administrator for 
+		maintenance tasks. </p>
+		
+		<p>Configuration files are stored in the <strong>/etc</strong> directory, which manages system and application 
+		settings.</p> 
+		
+		<p>User home directories reside under <strong>/home</strong>, providing individual spaces for user files and personal 
+		settings.</strong></p>
+		
+		<p>The <strong>/lib</strong> and <strong>/lib64</strong> directories contain shared libraries necessary for programs to
+		function properly.</p> 
+		
+		<p>The <strong>/usr</strong> directory holds user-related programs, application binaries, and documentation, 
+		further organized into subdirectories like <strong>/usr/bin</strong> for user commands and <strong>/usr/share</strong>
+		for architecture-independent data.</p>
+		
+		<p>Temporary files are managed in the <strong>/tmp</strong> directory, which is typically cleared on reboot.</p> 
+		<p>The <strong>/var</strong> directory contains variable data files, including logs and mail spools, which are 
+		constantly changing.</p> 
+		
+		<p>The <strong>/dev</strong> directory is essential for device files, providing interfaces to hardware components.</p> 
+		
+		<p>Understanding this hierarchy is vital for effective navigation and management of a Linux system, ensuring users 
+		can locate and manage files efficiently. You don't really need to memorize the names and the uses for each directory,
+		after you get used to move around the command line with [cd] and interact with the files with <strong>[mkdir] [mv] [cp]</strong> and 
+		compiling and tinkering with configuration files using <strong>[vim] or [nano]</strong> you will already be familiarized with the filesystem.</p>
+	
+		<h2>Understanding Libre Software</h2>
+		<p class="quote">A picture is worth a thousand words</p>
+		<p>And 819 seconds with 25 pictures each is roughly 20.475 pictures, in total worth 20.475.000 words.</p>
+		<p> I will leave Richard Stallman's speech on free software in the video below</p>
+		
+		<video controls class=video-container>
+		<source src="css/video/stallman.mp4" type="video/mp4">
+		</video>
+		 <p><a href="https://www.gnu.org/philosophy/free-sw.en.html" class=links>More on Libre Software</a> 
+		 
+		 <footer>
+			<p>Sergey Holoshchuk Kozaev // MP04 - LMSGI</p>
+		</footer>
+		
+	</body>
+
+</html>
